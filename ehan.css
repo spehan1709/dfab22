@@ -1,0 +1,39 @@
+/* use less shitty colours please*/
+body {
+    background-color: rgb(115, 239, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-size: 35;
+}
+
+h1 , h2{
+    text-align: center;
+}
+
+#subtitle{
+    text-align: center;
+}
+
+#randomname{
+    text-align: center;
+}
+
+#abouttext{
+    background-color: rgb(75, 241, 205);
+    text-align: center;
+    padding: 1%;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#container {
+    background-color: rgb(75, 241, 205);
+    margin-left: auto;
+    margin-right: auto;
+    height: 45px;
+}
