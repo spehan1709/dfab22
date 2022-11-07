@@ -1,11 +1,12 @@
 /* use less shitty colours please*/
 body {
-    background-color: rgb(115, 239, 255);
+    background-color: lightblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1{
     font-size: 35;
+    background-color: darkgray;
 }
 
 h1 , h2{
@@ -20,8 +21,14 @@ h1 , h2{
     text-align: center;
 }
 
+#main{
+    background-color: lightgray;
+    width: 95%;
+    max-height: 90px;
+}
+
 #abouttext{
-    background-color: rgb(75, 241, 205);
+    background-color: lightgray;
     text-align: center;
     padding: 1%;
 }
@@ -32,8 +39,39 @@ h1 , h2{
     margin-right: auto;
 }
 #container {
-    background-color: rgb(75, 241, 205);
-    margin-left: auto;
-    margin-right: auto;
     height: 45px;
 }
+
+
+#navigation {
+    float:left;
+    width: auto;
+    background-color: lightgray;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+}
+
+#navhead {
+    background-color: darkgray;
+    width: auto;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#navigation ul {
+    list-style-type:none;
+}
+
+#content {
+    float: right;
+    width: 80%;
+    background-color: lightgray;
+    padding-right: 20px;
+}
+
+
