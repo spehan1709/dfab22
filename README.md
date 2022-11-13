@@ -1,5 +1,5 @@
 # Ethan's DFAB repo
 
-blah blah blah blah blah
+This is my repository I'm using for my project in the EP1000 elective programme.
 
-INCOMPLETE
+Note to self: put all the images into a folder
