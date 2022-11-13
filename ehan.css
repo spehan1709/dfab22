@@ -13,6 +13,10 @@ h1 , h2{
     text-align: center;
 }
 
+h3{
+    text-align: center;
+}
+
 #subtitle{
     text-align: center;
 }
@@ -71,7 +75,23 @@ h1 , h2{
     float: right;
     width: 80%;
     background-color: lightgray;
+    padding-left: 20px;
     padding-right: 20px;
+    text-align: center;
 }
 
+#weekupdate {
+    background-color: darkgray;
+    padding-left: 10px;
+    padding-bottom:3px;
+}
 
+#raster {
+    float: left;
+    text-align: center;
+}
+
+#vector {
+    float: right;
+    text-emphasis: center;
+}
