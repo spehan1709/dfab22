@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Ethan's DFAB Webpage</title>
+        <link rel="stylesheet" href="./ehan.css">
+        </head>
+        <body>
+            <div id="container">
+                <div id="header">
+                    <h1>Final Project - Digital clock</h1>
+                </div>
+            </div>
+            <hr>
+            <div id="content">         
+                <h1>Final Project navigation</h1>
+                <p>
+                    <a href="ca3.html">Overview</a> • <a href="ca3cad.html">2D and 3D parts</a> 
+                    • <a href="">Electronics and programming</a> • <a href="ca3final.html">Assembly and final thoughts</a> 
+                </p>
+                <br>
+                <div id="weekupdate">
+                    <h2>Electronics</h2>
+                    <p>To make the clock, I used an arduino uno as the main controller for the clock.</p>
+                    <br>
+                    <p>Input devices are the button, DHT11 weather sensor, and a rotary encoder.</p>
+                    <br>
+                    <p>The sole output device is an LCD which displays all the information of the clock.</p>
+                    <img src="images/electronicoverview.jpeg" width="50%" height="auto">
+                    <br>
+                    <p>Because the jumper cables do not attach to the button reliably, I had to solder together a small breakout board with pins to allow the jumper cables to join.</p>
+                    <img src="images/buttonsolder.jpeg" width="40%" height="auto">
+                    <p>The cables for the battery back also weren't attached to the connector for the arduino, So I had to solder that too.</p>
+                    <img src="images/batterysolder.jpeg" width="40%" height="auto">
+                    <h3>CONNECTIONS</h3>
+                    <p>The 5V and GND of the Arduino are connected to the positive and negative buses of the breadboard, with the 5V and GND being joined to their respective buses on the other side of the breadboard</p>
+                    <br>
+                    <p>For the rotary encoder,</p>
+                    <img src="images/rotaryconnection.jpeg" width="40%" height="auto">
+                    <p>+ pin to 5V bus (red), GND pin to ground bus (black), CLK pin to Arduino pin 2 (blue), DT pin to Arduino pin 3 (Purple), SW pin to Arduino pin 4 (grey)</p>
+                    <br>
+                    <p>For the LCD screen I2C adapter,</p>
+                    <img src="images/lcdconnection.jpeg" width="40%" height="auto">
+                    <p>VCC to 5V (red), GND to ground (black), SDA and SCL pins to the same-named pins on the Arduino.</p>
+                    <br>
+                    <p>For the DHT11,</p>
+                    <img src="images/dhtconnection.jpg" width="40%" height="auto">
+                    <p> pin 1 (red) connected to 5V, pin 2 (yellow) connected to arduino pin 7, pin 3 has no connection, pin 4 (black) connected to ground.</p>
+                    <br>
+                    <p>pin 1 and 2 are connected together by a 10kohm resistor.</p>
+                    <br>
+                    <p>For the button, one pin connected to 5V, the pin on the other side is connected to Arduino pin 8 AND a 470 ohm pulldown resistor connected to ground.</p>
+
+                    <h2>PROGRAMMING</h2>
+                    <p>Initially, I used Tinkercad to try out the clock code.</p>
+                    <video width="70%" height="auto" controls>
+                        <source src="images/clocktest.mp4" type="video/mp4">
+                    </video>
+                    <p>(The flickering does not happen on the real clock.)</p>
+                    <br>
+                    <p>I had to use separate values for the intervals between the DHT11 reading (five minutes) and the clock updating, without using the delay function to get.</p>
+                    <br>
+                    <p>Due to small delays in the Arduino's processing of all the code, I need to compensate for these delays.</p>
+                    <img src="images/codedemo.jpg" width="50%" height="auto">
+                    <p>This is an example of some code (marked with red dots) to determine the delay.</p>
+                    <br>
+                    <p>I then added the delay I found to the millisecond counter.</p>
+                    <br>
+                    <p>Overall, this was the most difficult part of the project, and it took a long time to find out how to get the clock to work.</p>
+
+                    <h3>SOURCE CODE</h3>
+                    <p>You will need the following libraries for the project:</p>
+                    <br>
+                    <p>LiquidCrystal_I2C (found by searching on the libraries browser on the arduino IDE)</p>
+                    <a href="https://github.com/adafruit/Adafruit_Sensor">Adafruit_Sensor</a>
+                    <br>
+                    <a href="https://github.com/adafruit/DHT-sensor-library">DHT.h and DHT_U.h</a>
+                    <br>
+                    <iframe src=https://create.arduino.cc/editor/ehan1709/d10022b4-f50d-4a34-bf2c-cad584b259d7/preview?embed style="height:600px;width:50%;margin:10px 0" frameborder=0></iframe>
+                </div>
+            </div>
+            <div id="navigation">
+                <div id="navhead">
+                <h1>Navigation</h1>
+                </div>
+                    <ul>
+                        <li><a href="index.html">Homepage/About me</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="projects.html">Projects/Assignments</a></li>
+                        <li><a href="">Final Project</a></li>
+                </ul>
+        </div>
+    </body>
+</html>

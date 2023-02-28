@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Ethan's DFAB Webpage</title>
+        <link rel="stylesheet" href="./ehan.css">
+        </head>
+        <body>
+            <div id="container">
+                <div id="header">
+                    <h1>Final Project - Digital clock</h1>
+                </div>
+            </div>
+            <hr>
+            <div id="content">         
+                <h1>Final Project navigation</h1>
+                <p>
+                    <a href="ca3.html">Overview</a> • <a href="ca3cad.html">2D and 3D parts</a> 
+                    • <a href="ca3elec.html">Electronics and programming</a> • <a href="">Assembly and final thoughts</a> 
+                </p>
+                <br>
+                <div id="weekupdate">
+                    <h2>Assembly</h2>
+                    <img src="images/heroshot.jpg" width = "50%" height="auto">
+                    <p>The completed build.</p>
+                    <br>
+                    <p>After completing the programming, I went on to assembling the clock. I hot glued the LCD and button to their respective brackets and hot glued the brackets to the box, where they would face out.</p>
+                    <br>
+                    <p>Additionally, to prevent the battery tray from shaking around the box, I used this 3M dual lock velcro tape to adhere it to the inner wall of the clock, while also being easily removable should replacement batteries be needed</p>
+                    <img src="images/tape.jpeg" width="50%" height="auto">
+                    <h3>FINAL THOUGHTS</h3>
+                    <p>This was a very difficult, but very interesting project to work on. Especially with the programming, many errors happened which led to some frustration, but in the end the whole product was satisfying to finish working on.</p>
+                    <br>
+                    <p>I have noticed two problems with the project which I think could be improved</p>
+                    <br>
+                    <p>1. Due to inherent lag and slight inaccuracies in delay funcitons in the Arduino, some drift from the correct time can occur, leading to inaccurate time readings. This can be fixed with a real time clock (RTC) module, but would likely require me to switch to a new board as I can no longer use the SDA and SCL pins for the LCD display and would require more pins.</p>
+                    <br>
+                    <p>2. The batteries may run out eventually as the DHT reading and LCD updating regularly is relatively more power hungry. This could be remedied by adding a hole in the side of the box to allow a cable from a constant power supply to power the clock.</p>
+                </div>
+            </div>
+            <div id="navigation">
+                <div id="navhead">
+                <h1>Navigation</h1>
+                </div>
+                    <ul>
+                        <li><a href="index.html">Homepage/About me</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="projects.html">Projects/Assignments</a></li>
+                        <li><a href="">Final Project</a></li>
+                </ul>
+        </div>
+    </body>
+</html>
